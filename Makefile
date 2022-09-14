@@ -6,7 +6,7 @@
 #    By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/08 23:48:51 by fsuomins          #+#    #+#              #
-#    Updated: 2022/09/14 22:59:06 by fsuomins         ###   ########.fr        #
+#    Updated: 2022/09/15 00:33:03 by fsuomins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,8 +23,11 @@ SRCS =  ft_isalnum.c \
 		ft_strchr.c \
 		ft_strrchr.c \
 		ft_memset.c \
+		ft_memmove.c \
+		ft_memcpy.c \
+		ft_bzero.c \
 		
-		
+
 
 INCLUDEH = .
 OBJS = $(patsubst %.c, %.o, $(SRCS)) #trocando um certo padrão pór outro (.c por .o em todos os arquivos do SRCS)

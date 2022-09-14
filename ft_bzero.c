@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/14 22:57:35 by fsuomins          #+#    #+#             */
-/*   Updated: 2022/09/15 00:33:59 by fsuomins         ###   ########.fr       */
+/*   Created: 2022/09/15 00:31:39 by fsuomins          #+#    #+#             */
+/*   Updated: 2022/09/15 00:32:12 by fsuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include <stdio.h>
+include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void    ft_bzero (void *s, size_t n)
 {
-	size_t			i;
-	unsigned char	*ptr;
-
-	i = 0;
-	ptr = (unsigned char *)b;
-	while (i < len)
-		ptr[i++] = (unsigned char)c;
-	return (b);
+    char *clean;
+    
+    clean = s;
+    while(n != '\0')
+    {
+        *clean++ = 0;
+        n--;
+    }
 }
+
+// int main ()
+// {
+//     char word[] = "palavra";
+//     int size = 7;
+//     ft_bzero(word, size);
+//     printf(":%s:\n", word);
+//     return(0);
+// }
