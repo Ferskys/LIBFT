@@ -6,11 +6,12 @@
 /*   By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 01:18:11 by fsuomins          #+#    #+#             */
-/*   Updated: 2022/09/13 23:58:51 by fsuomins         ###   ########.fr       */
+/*   Updated: 2022/09/16 21:27:10 by fsuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include "libft.h"
+
 int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)

@@ -1,26 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/13 19:41:02 by fsuomins          #+#    #+#             */
-/*   Updated: 2022/09/16 21:26:54 by fsuomins         ###   ########.fr       */
+/*   Created: 2022/09/16 21:11:04 by fsuomins          #+#    #+#             */
+/*   Updated: 2022/09/16 21:19:01 by fsuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int	ft_atoi(char *str)
 {
-	while (*s)
+	int	result;
+	int	i;
+	int	s;
+
+	s = 1;
+	i = 0;
+	result = 0;
+	while (str[i] <= 32 || str[i] == 127)
+		i++;
+	while (str[i] == '+' || str[i] == '-')
 	{
-		if (*s == c)
-			return ((char *)s);
-		s++;
+		if (str[i] == '-')
+		{
+			s *= -1;
+		}
+		i++;
 	}
-	if (c == '\0')
-		return ((char *)s);
-	return (0);
+	while (str[i] >= 48 && str[i] <= 57)
+	{
+		result = result * 10 + (str[i] - '0');
+		i++;
+	}
+	return (s * result);
 }

@@ -6,13 +6,13 @@
 #    By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/08 23:48:51 by fsuomins          #+#    #+#              #
-#    Updated: 2022/09/15 00:33:03 by fsuomins         ###   ########.fr        #
+#    Updated: 2022/09/16 22:25:35 by fsuomins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-SRCS =  ft_isalnum.c \
-		ft_isalpha.c \
+SRCS =  ft_isalpha.c \
+		ft_isalnum.c \
 		ft_isascii.c \
 		ft_isdigit.c \
 		ft_isprint.c \
@@ -26,6 +26,13 @@ SRCS =  ft_isalnum.c \
 		ft_memmove.c \
 		ft_memcpy.c \
 		ft_bzero.c \
+		ft_atoi.c \
+		ft_calloc.c \
+		ft_memchr.c \
+		ft_strdup.c \
+		ft_strjoin.c \
+		ft_strlcpy.c \
+		ft_memcmp.c \
 		
 
 

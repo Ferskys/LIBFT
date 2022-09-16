@@ -6,11 +6,13 @@
 /*   By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 23:58:31 by fsuomins          #+#    #+#             */
-/*   Updated: 2022/09/13 23:54:16 by fsuomins         ###   ########.fr       */
+/*   Updated: 2022/09/16 22:10:33 by fsuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+int	ft_isalpha(char c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
