@@ -6,7 +6,7 @@
 #    By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/08 23:48:51 by fsuomins          #+#    #+#              #
-#    Updated: 2022/09/21 23:13:34 by fsuomins         ###   ########.fr        #
+#    Updated: 2022/09/21 23:42:10 by fsuomins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,8 @@ SRCS =  ft_isalpha.c \
 		ft_substr.c \
 		ft_strtrim.c \
 		ft_strmapi.c \
+		ft_striteri.c \
+		
 		
 
 
