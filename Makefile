@@ -6,7 +6,7 @@
 #    By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/08 23:48:51 by fsuomins          #+#    #+#              #
-#    Updated: 2022/09/16 23:46:32 by fsuomins         ###   ########.fr        #
+#    Updated: 2022/09/21 21:17:06 by fsuomins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,12 @@ SRCS =  ft_isalpha.c \
 		ft_memcmp.c \
 		ft_strlcat.c \
 		ft_strnstr.c \
-		
+		ft_putendl_fd.c \
+		ft_putstr_fd.c \
+		ft_putchar_fd.c \
+		ft_putnbr_fd.c \
+		ft_substr.c \
+		ft_strtrim.c \
 		
 
 

@@ -6,7 +6,7 @@
 /*   By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 00:35:35 by fsuomins          #+#    #+#             */
-/*   Updated: 2022/09/16 21:27:03 by fsuomins         ###   ########.fr       */
+/*   Updated: 2022/09/21 21:13:01 by fsuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,3 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
-
-/*int main() {
-    int test = 'N';
-    int test2 = 'n';
-    
-	printf("%i\n", test);
-	printf("%i\n", test2);
-	printf("%i\n", ft_tolower(test)); // diminiu
-	printf("%i\n", ft_tolower(test2)); // mantem
-	return 0;
-}*/

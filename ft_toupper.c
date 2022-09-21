@@ -6,7 +6,7 @@
 /*   By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 01:18:11 by fsuomins          #+#    #+#             */
-/*   Updated: 2022/09/16 21:27:10 by fsuomins         ###   ########.fr       */
+/*   Updated: 2022/09/21 21:13:06 by fsuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
-/*int main() {
-    int test = 'N';
-    int test2 = 'n';
-    
-	printf("%i\n", test);
-	printf("%i\n", test2);
-	printf("%i\n", ft_toupper(test));
-	printf("%i\n", ft_toupper(test2));
-	return 0;
-}*/

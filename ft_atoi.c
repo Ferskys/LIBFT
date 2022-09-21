@@ -6,7 +6,7 @@
 /*   By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 21:11:04 by fsuomins          #+#    #+#             */
-/*   Updated: 2022/09/16 21:19:01 by fsuomins         ###   ########.fr       */
+/*   Updated: 2022/09/21 20:42:18 by fsuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,18 @@ int	ft_atoi(char *str)
 
 	s = 1;
 	i = 0;
-	result = 0;
-	while (str[i] <= 32 || str[i] == 127)
+	if ((str[i] == '-' || str[i] == '+') && (str[i + 1] == '-'
+			|| str[i +1] == '+'))
+		return (0);
+	while (str[i] == 32 || (str[i] >= 7 && str[i] <= 13))
 		i++;
 	while (str[i] == '+' || str[i] == '-')
 	{
 		if (str[i] == '-')
-		{
-			s *= -1;
-		}
+			s = -1;
 		i++;
 	}
+	result = 0;
 	while (str[i] >= 48 && str[i] <= 57)
 	{
 		result = result * 10 + (str[i] - '0');
