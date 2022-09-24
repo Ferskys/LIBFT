@@ -6,7 +6,7 @@
 #    By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/08 23:48:51 by fsuomins          #+#    #+#              #
-#    Updated: 2022/09/22 22:48:47 by fsuomins         ###   ########.fr        #
+#    Updated: 2022/09/24 19:31:05 by fsuomins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,7 +61,7 @@ $(NAME) : $(OBJS)
 
 #o "s" cria um indice para os arquivos, e agiliza o processo de likagem
 $(OBJS) : $(SRCS) libft.h
-	@cc $(CFLAGS) -c $(SRCS) -I $(INCLUDEH) 
+	cc $(CFLAGS) -c $(SRCS) -I $(INCLUDEH) 
 
 clean : 
 	@rm -f $(OBJS)

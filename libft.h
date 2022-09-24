@@ -6,7 +6,7 @@
 /*   By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 23:19:53 by fsuomins          #+#    #+#             */
-/*   Updated: 2022/09/22 22:48:25 by fsuomins         ###   ########.fr       */
+/*   Updated: 2022/09/24 19:36:32 by fsuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int ft_tolower(int c);
 int ft_toupper(int c);
 int	ft_isascii(int c);
 int ft_isprint(int c);
-int ft_atoi(char *str);
+int ft_atoi(const char *str);
 int	ft_memcmp(const void *s1, const void *s2, size_t n);
 int ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_itoa(int n);
