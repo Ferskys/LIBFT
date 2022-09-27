@@ -6,7 +6,7 @@
 /*   By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 22:07:38 by fsuomins          #+#    #+#             */
-/*   Updated: 2022/09/27 19:34:04 by fsuomins         ###   ########.fr       */
+/*   Updated: 2022/09/27 20:22:49 by fsuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_strdup("\0"));
 	if ((ft_strlen(s) - start) < len)
 		len = ft_strlen(s) - start;
-	str = malloc(sizeof(char) * (len + 1)); 
+	str = malloc(sizeof(char) * (len + 1));
 	if (!str || !s)
 		return (NULL);
 	i = 0;

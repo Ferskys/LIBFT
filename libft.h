@@ -6,7 +6,7 @@
 /*   By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 23:19:53 by fsuomins          #+#    #+#             */
-/*   Updated: 2022/09/24 19:36:32 by fsuomins         ###   ########.fr       */
+/*   Updated: 2022/09/27 20:27:58 by fsuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,19 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
-#define INT_MAX   (2147483647)
-#define INT_MIN (-2147483648)
+# define INT_MAX   (2147483647)
+# define INT_MIN (-2147483648)
 
-
-int ft_isalpha(char c);
-int ft_isdigit(int c);
-int ft_isalnum(int c);
-int ft_tolower(int c);
-int ft_toupper(int c);
-int	ft_isascii(int c);
-int ft_isprint(int c);
-int ft_atoi(const char *str);
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
-int ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_isalpha(char c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+int		ft_atoi(const char *str);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_itoa(int n);
 char	*ft_strdup(const char *s1);
 char	*ft_strchr(const char *s, int c);
@@ -51,7 +50,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
-void    ft_bzero (void *s, size_t n);
+void	ft_bzero(void *s, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
