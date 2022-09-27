@@ -6,7 +6,7 @@
 /*   By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 21:20:25 by fsuomins          #+#    #+#             */
-/*   Updated: 2022/09/16 22:06:03 by fsuomins         ###   ########.fr       */
+/*   Updated: 2022/09/27 18:37:26 by fsuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,10 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	tot_size = nmemb * size;
 	fill_byte = 0;
+	if (!nmemb || !size || size > INT_MAX / nmemb)
+		return (NULL);
 	pos = malloc(tot_size);
-	if (!pos || (tot_size > (INT_MAX)))
+	if(!pos)
 		return (NULL);
 	ft_memset (pos, fill_byte, tot_size);
 	return ((void *)pos);
