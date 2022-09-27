@@ -6,7 +6,7 @@
 #    By: fsuomins <fsuomins@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/08 23:48:51 by fsuomins          #+#    #+#              #
-#    Updated: 2022/09/24 19:31:05 by fsuomins         ###   ########.fr        #
+#    Updated: 2022/09/27 20:05:20 by fsuomins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,10 +46,6 @@ SRCS =  ft_isalpha.c \
 		ft_split.c \
 		ft_itoa.c \
 		
-		
-		
-
-
 INCLUDEH = .
 OBJS = $(patsubst %.c, %.o, $(SRCS)) #trocando um certo padrão pór outro (.c por .o em todos os arquivos do SRCS)
 CFLAGS = -Wall -Wextra -Werror
