@@ -9,8 +9,6 @@
 ## Summary
 > This project is about coding a C library that will be used in future projects.
 > It will contain a lot of useful general purpose functions.
-> This version of Libft also includes ft_printf and get_next_line projects.
-
 ## Getting started
 First, clone this repository and `cd` into it:
 
