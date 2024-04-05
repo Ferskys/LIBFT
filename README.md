@@ -13,7 +13,7 @@
 First, clone this repository and `cd` into it:
 
 ```zsh
-$ git clone https://github.com/0xEDU/libft; cd libft
+$ git clone https://github.com/Ferskys/libft; cd libft
 ```
 
 Compile the library with:
